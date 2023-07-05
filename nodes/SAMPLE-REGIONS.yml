@@ -1,0 +1,64 @@
+steps:
+  REGIONS-6c3989cb-1a49-4d9b-a83c-c72a47b1e273:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: SAMPLE
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: b27a7480-a46e-4e55-9799-69466d166b9c
+              stepCounter: 6c3989cb-1a49-4d9b-a83c-c72a47b1e273
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: R_REGIONKEY
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 3233bb0e-5fa2-440d-8e33-7d5e0dbf24b9
+              stepCounter: 6c3989cb-1a49-4d9b-a83c-c72a47b1e273
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: R_NAME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 04b609b8-08a3-4cf2-81dd-153e596d24b2
+              stepCounter: 6c3989cb-1a49-4d9b-a83c-c72a47b1e273
+            config: {}
+            dataType: VARCHAR(152)
+            defaultValue: ""
+            description: ""
+            name: R_COMMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SAMPLE', 'REGIONS') }}
+      name: REGIONS
+      schema: ""
+      sqlType: Source
+      table: REGIONS
+      type: sourceInput
+    stepCounter: 6c3989cb-1a49-4d9b-a83c-c72a47b1e273
